@@ -13,9 +13,9 @@ function verificaIdade(idade){
 let atletas = []  
 
 console.log("Bem vindo ao cadastro de atletas do campeonato sub 17 de futsal")
-console.log("Nesse cadastro você tera que colocar o nome do atleta, a sua idade e a posição que joga.")
+console.log("Nesse cadastro você tera que colocar o nome da equipe, o nome dos atleta, a sua idade e a posição que joga.")
 let nomeEquipe = prompt("Digite o nome da equipe:")
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 7; i++) {
 
     let atleta = {}   
 
@@ -30,5 +30,5 @@ for (let i = 0; i < 6; i++) {
 }
 
 console.log("\nLista completa de atletas cadastrados:")
-console.log(atletas)
 console.log(`${nomeEquipe}`)
+console.log(atletas)
