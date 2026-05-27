@@ -1,13 +1,15 @@
 export default function PasswordOptions({
   minusculas,
   setMinusculas,
+  maiusculas,
+  setMaiusculas,
   numeros,
   setNumeros,
   simbolos,
   setSimbolos,
 }) {
   return (
-    <div className="opcoes">
+    <div className="options">
       <label>
         <input
           type="checkbox"
@@ -16,7 +18,18 @@ export default function PasswordOptions({
             setMinusculas(!minusculas)
           }
         />
-        Minúsculas
+        Letras minúsculas
+      </label>
+
+      <label>
+        <input
+          type="checkbox"
+          checked={maiusculas}
+          onChange={() =>
+            setMaiusculas(!maiusculas)
+          }
+        />
+        Letras maiúsculas
       </label>
 
       <label>

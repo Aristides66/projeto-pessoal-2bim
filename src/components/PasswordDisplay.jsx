@@ -1,7 +1,5 @@
-export default function PasswordDisplay ({ senha }) {
-  return (
-    <div className="senha">
-      {senha}
-    </div>
-  )
+export default function PasswordDisplay({
+  senha,
+}) {
+  return <h3>{senha}</h3>
 }

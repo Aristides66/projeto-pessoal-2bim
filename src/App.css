@@ -1,83 +1,87 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #0f172a;
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .app {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #000814,
+    #001d3d,
+    #003566
+  );
 }
 
 .container {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 12px;
-  width: 320px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: #0d1117;
+  padding: 30px;
+  border-radius: 16px;
+  width: 350px;
+  box-shadow: 0 0 25px rgba(0, 119, 255, 0.4);
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.container h2 {
-  margin-bottom: 20px;
+h2 {
+  text-align: center;
+  color: #4da3ff;
+}
+
+label {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 input[type="number"] {
-  width: 70px;
-  padding: 8px;
-  margin: 10px 0 20px;
-  border: none;
-  border-radius: 6px;
-  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #1f6feb;
+  background: #161b22;
+  color: white;
+  font-size: 16px;
 }
 
-.opcoes {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.opcoes label {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+input[type="checkbox"] {
+  transform: scale(1.1);
 }
 
 button {
-  background: #22c55e;
+  background: #1f6feb;
+  color: white;
   border: none;
   padding: 12px;
-  width: 100%;
-  color: white;
-  font-weight: bold;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 16px;
   transition: 0.3s;
 }
 
 button:hover {
-  background: #16a34a;
+  background: #388bfd;
 }
 
-.senha {
-  margin-top: 20px;
-  background: #0f172a;
-  padding: 12px;
-  border-radius: 6px;
+h3 {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: #58a6ff;
   word-break: break-all;
-  min-height: 45px;
+  border: 1px solid #1f6feb;
+}
+
+.options {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
