@@ -1,11 +1,11 @@
 import { useState } from "react"
 import "./App.css"
-import "./components/Botao"
-import "./components/PasswordDisplay"
-import "./components/PasswordOptions"
+import { Button } from "./components/Button"
+import { PasswordDisplay } from "./components/PasswordDisplay"
+import { PasswordOptions } from "./components/PasswordOptions"
 
 export default function App() {
-  const [tamanho, setTamanho] = useState(8);
+  const [tamanho, setTamanho] = useState(8)
   const [minusculas, setMinusculas] = useState(true)
   const [numeros, setNumeros] = useState(true)
   const [simbolos, setSimbolos] = useState(false)
@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="container">
-        <h2>🔐 Gerador de Senhas</h2>
+        <h2> Gerador de Senhas</h2>
 
         <label>Tamanho:</label>
 
